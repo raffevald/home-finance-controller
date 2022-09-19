@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-
 import { LoginPage } from './pages/loginPage/loginPages';
 import { DashboardPage } from './pages/dashboardPage/dashboardPage';
 
