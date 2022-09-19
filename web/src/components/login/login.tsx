@@ -46,8 +46,8 @@ export function Login() {
         // if (isLogin) {
         //     console.log("Finalmente Rafa");
         // }
-        await api.post(`/api/login${usuario}`, dados)
-            .then((response) => {
+      /*  await api.post(`/api/login${usuario}`, dados)
+       //     .then((response) => {
                 // setIsLogin(response.data);
                 setIsLogin(response.data);
             })
@@ -61,7 +61,7 @@ export function Login() {
         console.log(isLogin);
         if (isLogin) {
             navigator("/dashboard")
-        }
+        } */
     }
 
 
