@@ -1,0 +1,9 @@
+01 – criar o projeto com donet new mvc
+
+02 – instalar docker
+        02.1 - Starta o docker
+                systemctl start docker
+
+03 – criar container do postgres
+	03.01
+	docker run -d --name postgres -e POSTGRES_PASSWORD=Raff-Nami-2078 -e PGDATA=/var/lib/postgresql/data/pgdata -v /custom/mount:/var/lib/postgresql/data -p 5050:5432 postgres

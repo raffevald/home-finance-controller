@@ -9,5 +9,7 @@ namespace api.Data
 
         public DbSet<UserModel>? usuarios { get; set; }
 
+       // public DbSet<UserLoginModel>? usuarios { get; set; }
+
     }
 }

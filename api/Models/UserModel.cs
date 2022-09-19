@@ -16,11 +16,3 @@ public class UserModel
 
  //   public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 }
-
-  /*  integer,
-     date,
-     char(11),
-     varchar(50),
-     varchar(50),
-     varchar(20),
-     integer, */

@@ -1,9 +1,9 @@
 using api.Data;
 using api.Models;
 using Microsoft.EntityFrameworkCore;
-using api.Repository;
+using api.Repository.Interfaces;
 
-namespace api.Repository.UserRepository
+namespace api.Repository.Repos
 {
     public class UserRepository : IUserRepository
     {
@@ -15,7 +15,7 @@ namespace api.Repository.UserRepository
 
         void IUserRepository.AddUserModel(UserModel userModel)
         {
-            throw new NotImplementedException();
+            _context.Add(userModel);
         }
 
         void IUserRepository.UpdateUserModel(UserModel userModel)

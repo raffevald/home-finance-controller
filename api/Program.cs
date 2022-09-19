@@ -1,4 +1,7 @@
-using api.Repository.UserRepository;
+using api.Repository.Interfaces;
+using api.Repository.Repos;
+using api.Repository.UserAutenticator;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +23,7 @@ builder.Services.AddDbContext<ApiDbContext>(options =>
 });
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserAutenticator, UserAutenticator>();
 
 var app = builder.Build();
 
