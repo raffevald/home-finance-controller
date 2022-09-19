@@ -17,3 +17,9 @@ CREATE TABLE usuarios (
     CONSTRAINT pk_usuarios PRIMARY KEY (codigo),
     FOREIGN KEY (fk_perfil) REFERENCES perfils_usuario(codigo)
 );
+
+
+// Massa de dados
+INSERT INTO public.perfils_usuario
+(codigo, descricao)
+VALUES(1, 'administrador');

@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using api.Models;
-using api.Repository.UserRepository;
+using api.Repository.Interfaces;
 
 namespace api.Controllers.UserController
 {
@@ -23,5 +22,15 @@ namespace api.Controllers.UserController
                 ? Ok(users)
                 : NoContent();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(UserModel userModel)
+        {
+            _repository.AddUserModel(userModel);
+            return await _repository.SaveChangesAsync()
+                ? Ok("Usuario adicionado com sucesso.")
+                : BadRequest("Falha ao adicionar o usuario.");
+        } 
+
     }
 }
