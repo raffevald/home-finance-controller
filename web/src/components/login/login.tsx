@@ -1,13 +1,6 @@
-// import { useNavigate } from "react-router-dom";
 import { FormEvent } from "react";
 import React, { useState } from "react";
-// import { fechGetAllAddress } from "../../stores/fetchActions/fechEnderecos";
-// import { fechUsersLogin } from "../../stores/fetchActions/fetchPostUserLogin";
-// import axios from "axios";
-import api from "../../services/api/api";
 import { useNavigate } from "react-router-dom";
-// import internal from "stream";
-// import { useDispatch } from "react-redux";
 
 interface login {
     isLogin: boolean;
@@ -29,46 +22,21 @@ interface login {
 // }
 
 export function Login() {
-    const [isLogin, setIsLogin] = useState(false);
-    const navigator = useNavigate();
+   // const [isLogin, setIsLogin] = useState(false);
+   // const navigator = useNavigate();
     const [usuario, setUsuario] = useState('');
     const [password, setSenha] = useState('');
-    // const { data } = fechGetAllAddress<endereco[]>();
-    // console.log(data);
-
-
 
     async function handleUserLogin(event: FormEvent) {
         event.preventDefault();
-        const dados = { usuario, password };
-        // const { } = fechUsersLogin(usuario, dados);
-        // const { isLogin } = fechUsersLogin(usuario, password)
-        // if (isLogin) {
-        //     console.log("Finalmente Rafa");
-        // }
-        await api.post(`/api/login${usuario}`, dados)
-            .then((response) => {
-                // setIsLogin(response.data);
-                setIsLogin(response.data);
-            })
-            .catch(err => {
-                console.log(err);
-                setIsLogin(false);
-            })
-            .finally(() => {
-
-            });
-        console.log(isLogin);
-        if (isLogin) {
-            navigator("/dashboard")
-        }
+     //   const dados = { usuario, password };
     }
 
 
     return (
         <form onSubmit={handleUserLogin} >
 
-            <h3>Login - CAJP</h3>
+            <h3>Login - DCF</h3>
 
             <div className="form-group">
                 <label>Usuário</label>
