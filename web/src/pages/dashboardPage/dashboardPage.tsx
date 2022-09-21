@@ -1,4 +1,3 @@
-import { fechGetAllAddress } from "../../stores/fetchActions/fechEnderecos";
 
 interface endereco {
     codigo: number
@@ -16,17 +15,9 @@ interface endereco {
 }
 
 export function DashboardPage() {
-    const { data } = fechGetAllAddress<endereco[]>();
-
     return (
         <div>
-            {
-                data?.map(enderecos => {
-                    return (
-                        <span>{enderecos.cidade}</span>
-                    );
-                })
-            }
+            <>Rafael</>
         </div>
     )
 }

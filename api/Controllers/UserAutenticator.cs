@@ -17,6 +17,8 @@ namespace api.Controllers.UserAutenticator
         public async Task<IActionResult> Post(UserAutenticatorModel userCredencial) {
             if (userCredencial.senha != null && userCredencial.usuario != null) {
                 var user = await _repository.LoginUserLogin(userCredencial.senha, userCredencial.usuario);
+                // var userDados = user.codigo;
+
                 return user != null
                 ? Ok(true)
                 : NotFound();
