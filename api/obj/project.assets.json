@@ -5655,24 +5655,26 @@
     ]
   },
   "packageFolders": {
-    "/home/evaldlich/.nuget/packages/": {}
+    "C:\\Users\\RaffEvald\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/evaldlich/www/home-finance-controller/api/api.csproj",
+      "projectUniqueName": "C:\\www\\home-finance-controller\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "/home/evaldlich/www/home-finance-controller/api/api.csproj",
-      "packagesPath": "/home/evaldlich/.nuget/packages/",
-      "outputPath": "/home/evaldlich/www/home-finance-controller/api/obj/",
+      "projectPath": "C:\\www\\home-finance-controller\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\RaffEvald\\.nuget\\packages\\",
+      "outputPath": "C:\\www\\home-finance-controller\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/evaldlich/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\RaffEvald\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5738,7 +5740,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
