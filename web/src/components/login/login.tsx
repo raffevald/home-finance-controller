@@ -1,29 +1,8 @@
 import { FormEvent } from "react";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-
-interface login {
-    isLogin: boolean;
-}
-
-// interface endereco {
-//     codigo: number
-//     pais: string
-//     estado: string
-//     cidade: string
-//     bairro: string
-//     logradouro: string
-//     numero: string
-//     referencia: string
-//     data_de_cadastros: Date
-//     data_de_atualizacao: Date
-//     usuario_que_cadastro: string
-//     fk_status: number
-// }
 
 export function Login() {
-   // const [isLogin, setIsLogin] = useState(false);
-   // const navigator = useNavigate();
+
     const [usuario, setUsuario] = useState('');
     const [password, setSenha] = useState('');
 
@@ -31,7 +10,6 @@ export function Login() {
         event.preventDefault();
      //   const dados = { usuario, password };
     }
-
 
     return (
         <form onSubmit={handleUserLogin} >
@@ -77,5 +55,4 @@ export function Login() {
             </p>
         </form>
     );
-
 }
